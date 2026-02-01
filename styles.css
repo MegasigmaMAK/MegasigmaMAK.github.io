@@ -9,10 +9,16 @@ html{
     gap: 5px; 
 }
 
+body{
+    max-height: 200px;
+    /* border: 9px solid black; */ 
+    display: flex;
+    align-items: center;
+}
 
 #col-first{
-    padding-left:100px;
-    font-size:95px;
+    padding-left:20px;
+    font-size:100px;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -25,8 +31,9 @@ b{
 
 
 #col-second{
+  padding-top:140px;
+  padding-left:20px;
   line-height: 7px;
-  padding-top: 150px;   
   font-family: "Zalando Sans Expanded", sans-serif;
   font-size:45px;
   font-weight: 200;
@@ -34,12 +41,30 @@ b{
 } 
 
 #col-third{
-  padding-top: 300px;
+  padding-top: 220px;
+  padding-left: 10px;
   font-size:45px;
   font-family: "Gravitas One", serif;
   font-weight: 400;
   font-style: italic;
 }
+
+#honeycomb1{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:500px;
+
+}
+
+.hexagon{
+    position: relative;
+    width: 50px;
+    height: 100px;
+    background: 998042;
+}
+
+
 
 
 
