@@ -1,6 +1,6 @@
 html{
     font-family: serif;
-    background: rgb(253, 254, 246);
+    background: rgb(92, 56, 2);
     margin: 0;
 }
 
@@ -11,18 +11,25 @@ html{
 
 body{
     max-height: 200px;
-    /* border: 9px solid black; */ 
-    display: flex;
-    align-items: center;
+    border: 9px solid black; 
+
+}
+
+.flexbox-grid{
+  align-items: flex-start;
 }
 
 #col-first{
+    border: 9px solid black; 
     padding-left:20px;
-    font-size:100px;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color:#ccc;
+    font-size:200px;
+    font-family: "Gravitas One", serif;
+    /* font-weight: 400; */
+    /* font-style: normal; */
 }
+
+
 
 b{
     font-weight: 1000;
@@ -31,17 +38,21 @@ b{
 
 
 #col-second{
-  padding-top:140px;
+  /* padding-top:140px; */
+  border: 9px solid black; 
   padding-left:20px;
+  color:#ccc;
   line-height: 7px;
   font-family: "Zalando Sans Expanded", sans-serif;
   font-size:45px;
-  font-weight: 200;
+  font-weight: 200px;
   font-style: normal;
 } 
 
 #col-third{
-  padding-top: 220px;
+  border: 9px solid black; 
+  color:#ccc;
+  /* padding-top: 220px; */
   padding-left: 10px;
   font-size:45px;
   font-family: "Gravitas One", serif;
@@ -56,6 +67,8 @@ b{
 
 /* ----------------------------------------- */
 .container {
+  display:flex;
+  flex-direction: column;
   width: 1000px; 
   line-height: 1.3;
 }
@@ -76,7 +89,7 @@ ol.odd {
   width: 6em;
   height: 10.2em;
   border-radius: 1em 0.5em;
-  background: #ccc;
+  background: #717171;
   transform: rotate(-90deg);
   display: inline-block;
   margin-right: 4.62em;
