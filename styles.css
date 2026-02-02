@@ -13,20 +13,25 @@ body{
     max-height: 200px;
     border: 9px solid black; 
 
+
 }
 
 .flexbox-grid{
   align-items: flex-start;
+  justify-content: center;
+  column-gap: 50px
 }
 
 #col-first{
-    border: 9px solid black; 
+    /* border: 9px solid black;  */
+    margin-top: -300px;
     padding-left:20px;
     color:#ccc;
-    font-size:200px;
-    font-family: "Gravitas One", serif;
-    /* font-weight: 400; */
-    /* font-style: normal; */
+    font-size: 250px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
 }
 
 
@@ -39,10 +44,11 @@ b{
 
 #col-second{
   /* padding-top:140px; */
-  border: 9px solid black; 
+  /* border: 9px solid black;  */
   padding-left:20px;
+  margin-top: -40px;
   color:#ccc;
-  line-height: 7px;
+  line-height: 27px;
   font-family: "Zalando Sans Expanded", sans-serif;
   font-size:45px;
   font-weight: 200px;
@@ -50,27 +56,26 @@ b{
 } 
 
 #col-third{
-  border: 9px solid black; 
-  color:#ccc;
-  /* padding-top: 220px; */
+  /* border: 9px solid black;  */
   padding-left: 10px;
+  margin-top: 90px;
+  color:#ccc;
   font-size:45px;
   font-family: "Gravitas One", serif;
   font-weight: 400;
   font-style: italic;
 }
 
-/* SCSS variables converted to CSS */
 
 
 
-
-/* ----------------------------------------- */
-.container {
+.hexagon-panel {
   display:flex;
   flex-direction: column;
+  position: relative;
   width: 1000px; 
   line-height: 1.3;
+
 }
 
 ol.even {
@@ -116,9 +121,12 @@ ol.odd {
 
 
 
+.hexagon-icon{
+  position: absolute;
+  top: 100px;
+  left: 200px;
 
-
-
+}
 
 
 
