@@ -1,6 +1,6 @@
 html{
     font-family: serif;
-    background: rgb(94, 47, 224);
+    background: rgba(246, 140, 1, 0.582);
     margin: 0;
 }
 
@@ -14,8 +14,7 @@ html
 
 body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--ink);
+    min-height: 500vh;
 }
 
 .timeline {
@@ -61,58 +60,139 @@ body {
     line-height: 1.6;
 }
 
+/* The timeline (literally the line) on the page and its aesthetics */
 .timeLINE {
     position: absolute;
-    height: 1000px;
-    top: 250px;
-    bottom: 40px;
+    height: 400vw;
+    top: 200px;
     left: 50%;
-    width: 25px;
+    width: 6px;
     border-radius: 999px;
     background: linear-gradient(
         180deg,
         rgba(239, 255, 69, 0.65),
-        rgba(255, 139, 6, 0.25)
+        rgba(204, 62, 243, 0.822)
     );
-    /* box-shadow: 0 0 0 6px rgba(197, 202, 233, 0.12); */
 }
 
-.timelineItem {
+/* The timeline item if I want it to be on the left */
+.timelineItemleft{
     position: relative;
-    top: 100px;
-    width: 100%;
+    top: 20%;
     margin: 0 0 70px;
     display: flex;
     justify-content: flex-start;
 }
 
-.timelineItem.right {
+/* The timeline item if I want it to be on the right */
+.timelineItemright{
+    position: relative;
+    top: 20%;
+    margin: 0 0 70px;
+    display: flex;
     justify-content: flex-end;
 }
 
+/* The dot of the timeline  */
 .timelineDot {
-    width: 25px;
+    width: 28px;
     height: 28px;
-    background:rgb(255, 255, 255);
-    border-radius: 50%;
+    background:rgb(240, 118, 61);
+    box-shadow: 0 0 0 6px rgba(255, 164, 37, 0.621), 0 18px 40px rgba(255, 164, 37, 0.621);
+    border-radius: 30%;
     position: absolute;
-    left: 50%;
     transform: translateX(-50%);
-    /* top: 150px; */
-    left: 51.1%;
+    left: 50.3%;
 
 }
-
-.card {
-    width: min(520px, 92%);
-    background: var(--surface);
-    border-radius: var(--radius);
-    box-shadow: var(--cardShadow);
+/* Color of timestamp and the aesthetics  */
+.timestamp {
+    width: min(520px);
+    background: rgba(255, 217, 199, 0.406);
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 2%;
     position: relative;
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.63);
+}
+/* 
+Date display icon at the corner of each stamp */
+.date {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+    background: rgba(204, 64, 255, 0.92);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 0.3px;
 }
 
 
+/* How the stamp will look: body, heading and paragraph */
+.stampBody {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 16px;
+}
+
+.stampBody h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.stampBody p {
+    line-height: 1.65;
+    margin-bottom: 12px;
+}
+
+/* How the image will look */
+.imgWrap img {
+    width: 100%;
+    height: 75%;
+}
+
+
+/* Back to top button */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Physical aesthetics of the icon */
+.back_to_top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(142, 52, 226, 0.769);
+    border-radius: 50%;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+/* Original looks of the button before being hovered on */
+.back_to_top span{
+    color:#fff;
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+}
+
+/* Looks of the button after being hovered on */
+.back_to_top:hover {
+    background-color:rgba(255, 153, 0, 0.769);
+
+}
+
+/* The effect of having the icon move slightly upwards when hovered upon  */
+.back_to_top:hover span {
+    transform: translateY(-4px);
+}
 

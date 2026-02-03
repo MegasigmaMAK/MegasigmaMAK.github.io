@@ -15,5 +15,7 @@ My personal site.
 
 - [how to make a hero class] https://www.w3schools.com/howto/howto_css_hero_image.asp#gsc.tab=0 this is the link that taught me how to make the hero class so that it can be centered. Because I found online that using hero class can make a certain small text be centered. 
 
+- [timeline] https://codepen.io/ash1198/pen/RNRWLBG i took inspiration from this timeline: Some code from the vertical layout as I was stuck on making the dot's position relative to the paragraph. 
 
+- [box shaodw] https://html-css-js.com/css/generator/box-shadow/ i used this generator to get the correct dimensions for the box instead of trial and error
 
