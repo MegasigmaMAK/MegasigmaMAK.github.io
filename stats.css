@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Nunito-sans';
+    height: 100vh;
+    background: #161032;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    
+
+}
+
+/* The title: My total days spent on bee swarm */
+h1{
+    margin-top:0;
+    font-weight: 400;
+}
+
+/* Entire graph box */
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 677px;
+    height: 500px;
+    background-color: #2e2650;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow:  31px 17px 31px 5px #150073;
+
+}
+
+/* the graph bars and text */
+.stats{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.stats_item{
+    text-align:center;
+}
+
+/* the original bars  */
+.stats_bar{
+    width: 100px;
+    height: 158px;
+    margin: 20px 20px;
+    background-color: #FAFF81;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* The bars that are created after animation */
+.stats_bar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: var(--hours);
+    left: 0;
+    right: 0;
+    background: #161032;
+    animation: barsgrowing 2s ease-in-out forwards
+
+}
+
+/* The text on the x axis */
+.LowerText{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    opacity: 0.5;
+    letter-spacing: 0.5px;
+}
+
+
+/* The animation for the barsgrowing look at readme */
+@keyframes barsgrowing {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: var(--hours);
+    }
+}
+
+/* Back to home button */
+
+/* Physical aesthetics of the icon */
+.back_to_home {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(142, 52, 226, 0.769);
+    border-radius: 50%;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+/* Original looks of the button before being hovered on */
+.back_to_home span{
+    color:#fff;
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+}
+
+/* Looks of the button after being hovered on */
+.back_to_home:hover {
+    background-color:rgba(255, 153, 0, 0.769);
+
+}
+
+/* The effect of having the icon move slightly upwards when hovered upon  */
+.back_to_home:hover span {
+    transform: translateY(-4px);
+}

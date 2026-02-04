@@ -19,3 +19,4 @@ My personal site.
 
 - [box shaodw] https://html-css-js.com/css/generator/box-shadow/ i used this generator to get the correct dimensions for the box instead of trial and error
 
+- [scroll animation] https://animista.net/play/basic/flip-scale-2 this link has alot of css animations that I found, and I selected the scroll animation so that the scroll button looks smooth. 
