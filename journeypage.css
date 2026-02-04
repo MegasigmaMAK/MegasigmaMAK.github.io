@@ -196,3 +196,38 @@ html{
     transform: translateY(-4px);
 }
 
+
+/* Back to home button */
+
+/* Physical aesthetics of the icon */
+.back_to_home {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(142, 52, 226, 0.769);
+    border-radius: 50%;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+/* Original looks of the button before being hovered on */
+.back_to_home span{
+    color:#fff;
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+}
+
+/* Looks of the button after being hovered on */
+.back_to_home:hover {
+    background-color:rgba(255, 153, 0, 0.769);
+
+}
+
+/* The effect of having the icon move slightly upwards when hovered upon  */
+.back_to_home:hover span {
+    transform: translateY(-4px);
+}

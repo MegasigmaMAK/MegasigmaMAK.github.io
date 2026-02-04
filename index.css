@@ -1,32 +1,33 @@
 html{
     font-family: serif;
-    background: rgb(92, 56, 2);
+    background: rgba(255, 173, 49, 0.876);
     margin: 0;
-}
+    border: rgba(72, 5, 255, 0.25);
+    text-decoration-color: #2b1b00;
+    border-radius: 20%; 
+    font-size: 14px;
+  }
 
-    .flexbox-grid{
+.flexbox-grid{
     display:flex;
     gap: 5px; 
-}
+  }
 
 body{
-    max-height: 200px;
-    /* border: 9px solid black;  */
-
-
-}
+    min-height: 60vw;
+  }
 
 .flexbox-grid{
   align-items: flex-start;
   justify-content: center;
-  column-gap: -5%;
+  column-gap: 2%;
 }
 
 #col-first{
     /* border: 9px solid black;  */
     margin-top: -300px;
     padding-left:15%;
-    color:#ccc;
+    color:#7a05ff;
     font-size: 250px;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -46,7 +47,7 @@ b{
   /* padding-top:140px; */
   /* border: 9px solid black;  */
   margin-top: -40px;
-  color:#ccc;
+  color:#7a05ff;
   line-height: 27px;
   font-family: "Zalando Sans Expanded", sans-serif;
   font-size:45px;
@@ -58,7 +59,7 @@ b{
   /* border: 9px solid black;  */
   padding-left: 10px;
   margin-top: 90px;
-  color:#ccc;
+  color:#7a05ff;
   font-size:45px;
   font-family: "Gravitas One", serif;
   font-weight: 400;
@@ -81,6 +82,7 @@ b{
 
 ol.even {
   position: relative;
+  max-height: 1%;
   left: 5.45em;
 }
 
@@ -89,19 +91,22 @@ ol.odd {
   margin-top: -6.5%;
   margin-bottom: -6.5%;
 }
-.hex {
+
+/* hexagons that do have something linked */
+.hex1 {
   position: relative;
   margin: 1em auto;
   width: 6em;
   height: 10.2em;
   border-radius: 1em 0.5em;
-  background: #717171;
+  background: #aaaaaa;
   transform: rotate(-90deg);
   display: inline-block;
   margin-right: 4.62em;
   transition: all 150ms ease-in-out;
+  bottom: 400px;
 }
-.hex:before, .hex:after {
+.hex1:before, .hex1:after {
   position: absolute;
   width: inherit;
   height: inherit;
@@ -109,16 +114,93 @@ ol.odd {
   background: inherit;
   content: '';
 }
-.hex:before {
+.hex1:before {
   transform: rotate(60deg);
 }
-.hex:after {
+.hex1:after {
   transform: rotate(-60deg);
 }
-.hex:hover {
+.hex1:hover {
   background: #e1f587;
   cursor: pointer;
 }
+
+/* hexagons that dont have anything linked */
+.hex2 {
+  position: relative;
+  margin: 1em auto;
+  width: 6em;
+  height: 10.2em;
+  border-radius: 1em 0.5em;
+  background: #e22242;
+  transform: rotate(-90deg);
+  display: inline-block;
+  margin-right: 4.62em;
+  transition: all 150ms ease-in-out;
+  bottom: 400px;
+}
+.hex2:before, .hex2:after {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.hex2:before {
+  transform: rotate(60deg);
+}
+.hex2:after {
+  transform: rotate(-60deg);
+}
+.hex2:hover {
+  background: #e1f587;
+  cursor: pointer;
+}
+
+.tutorial-message{ 
+  background:rgba(246, 92, 20, 0.22);
+  border: 2px solid rgba(72, 5, 255, 0.25);
+  border-radius: 50px;
+  backdrop-filter: blur(6px);
+  width: 30%;
+}
+
+.tutorial-message-text{
+  display: flex;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+
+.main-message{ 
+  position: absolute;
+  right:10px;
+  bottom: -100px;
+  background:rgba(246, 99, 20, 0.541);
+  border: 2px solid rgba(72, 5, 255, 0.25);
+  border-radius: 50px;
+  backdrop-filter: blur(6px);
+  width: 65%;
+}
+
+.main-message-text{
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+
+
+
 
 
 
