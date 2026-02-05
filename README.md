@@ -20,3 +20,7 @@ My personal site.
 - [box shaodw] https://html-css-js.com/css/generator/box-shadow/ i used this generator to get the correct dimensions for the box instead of trial and error
 
 - [scroll animation] https://animista.net/play/basic/flip-scale-2 this link has alot of css animations that I found, and I selected the scroll animation so that the scroll button looks smooth. 
+
+- [animation tutorial]https://www.youtube.com/watch?v=YszONjKpgg4 this link leads to the video which taught me how to animate 
+
+- [graph creating]https://www.youtube.com/watch?v=MpOKT59LN4I the video that taught me how to create a graph that had a its own unique columns and also the animations for each column. 
